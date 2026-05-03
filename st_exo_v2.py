@@ -30,7 +30,7 @@ if choice == 'Input Parametres directly':
     st.subheader("Class labels and their corresponding index numbers :")
     df_p = pd.DataFrame(["Setosa", "Versicolor", "Virginica"], index=["0", "1", "2"], columns=["0"])
     st.write(df_p)
-    model = pickle.load(open(r"C:\Users\Reda\Desktop\10_Labs_deploiement\Streamlit\app solution\modeliris6.pkl", "rb"))
+    model = pickle.load(open("modeliris6.pkl", "rb"))
     pred = model.predict(df)
     st.subheader("Predicted :")  
     st.write(pred)
